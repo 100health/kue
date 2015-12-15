@@ -38,7 +38,10 @@
       setTimeout(process.exit, 1000);
     });
 
-    queue.process(jobType, function (job, done) {
+    queue.process({
+      type: jobType,
+      singleWorker: true
+    }, function (job, done) {
       var n = job.data.n;
 
       console.log('Process ' + process.pid + ' is processing job: ' + n);
