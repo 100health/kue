@@ -1,6 +1,6 @@
 {
   "name": "kue",
-  "version": "0.10.4",
+  "version": "0.10.5",
   "description": "Feature rich priority job queue backed by redis",
   "homepage": "http://automattic.github.io/kue/",
   "keywords": [
@@ -32,9 +32,10 @@
     "lodash-deep": "^1.1.0",
     "nib": "~1.1.0",
     "node-redis-warlock": "^0.1.2",
-    "redis": "^2.3.0",
+    "redis": "^2.4.2",
     "reds": "~0.2.5",
-    "stylus": "~0.52.4"
+    "stylus": "~0.52.4",
+    "yargs": "^3.31.0"
   },
   "devDependencies": {
     "async": "^1.4.2",
@@ -42,6 +43,7 @@
     "coffee-script": "~1.10.0",
     "mocha": "^2.3.3",
     "should": "^3.1.0",
+    "sinon": "^1.17.2",
     "supertest": "~1.1.0"
   },
   "main": "index",
