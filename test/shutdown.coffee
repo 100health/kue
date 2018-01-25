@@ -73,6 +73,7 @@ describe 'Kue', ->
 
     it 'should shutdown one worker type on single type shutdown', (testDone) ->
       jobs = kue.createQueue()
+      jobs.setupTimers();
       # set up two worker types
       jobs.process 'runningTask', (job, done) ->
           done()

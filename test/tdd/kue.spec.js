@@ -397,11 +397,6 @@ describe('Kue', function () {
       client.incrby.calledWith(client.getKey('stats:work-time'), job.duration).should.be.true;
     });
 
-    it('should setup timers', function () {
-      queue.process('type', 3, sinon.stub());
-      queue.setupTimers.called.should.be.true;
-    });
-
   });
 
   describe('Function: shutdown', function() {

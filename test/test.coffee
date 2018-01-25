@@ -10,6 +10,7 @@ describe 'Kue Tests', ->
 
   beforeEach ->
     jobs = kue.createQueue({promotion:{interval:50}})
+    jobs.setupTimers();
     Job = kue.Job
 
   afterEach (done) ->
