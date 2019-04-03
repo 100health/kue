@@ -3,11 +3,7 @@ extends ../layout
 block body
     h1 #{state}
 
-    script.
-        o(function(){
-          init('#{state}');
-        });
-
+    script(src='./javascripts/init.js')
 
     #jobs
     #loading: canvas(width=50, height=50)
